@@ -2,21 +2,16 @@
 
 using namespace std;
 
-int sum(int n)
+void increament(int n, int &n1)
 {
-    int digit_sum=0;
-    while (n)
-    {
-        digit_sum = digit_sum + n%10;
-        n=n/10;
-        /* code */
-    }
-    return digit_sum;
+    n++;
+    n1++;
 }
 
 int main() {
-     int a, b;
-     cin>>a >> b;
-     cout << sum(a) + sum(b);
-    
+     int a=2;
+     int b=3;
+     cout << a <<" " << b << endl;
+     increament(a,b);
+     cout << a <<" " << b << endl;
 }
