@@ -2,17 +2,16 @@
 
 using namespace std;
 
-// void swap(int &a, int &b)
-// {
-//     int temp = a;
-//     a=b;
-//     b=temp;
-// }
+const int N=1e3+1;
+int a[N][N];
 
+void func()
+{
+    a[0][0]=5;
+}
 int main() {
-     int a=2;
-     int b=3;
-     cout << a <<" " << b << endl;
-     swap(a,b);
-     cout << a <<" " << b << endl;
+     a[0][0]= 7;
+     cout << a [0][0] << endl;
+     func();
+     cout << a [0][0] << endl;
 }
