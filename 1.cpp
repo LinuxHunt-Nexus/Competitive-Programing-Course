@@ -2,16 +2,17 @@
 
 using namespace std;
 
-void increament(int n, int &n1)
+void swap(int &a, int &b)
 {
-    n++;
-    n1++;
+    int temp = a;
+    a=b;
+    b=temp;
 }
 
 int main() {
      int a=2;
      int b=3;
      cout << a <<" " << b << endl;
-     increament(a,b);
+     swap(a,b);
      cout << a <<" " << b << endl;
 }
